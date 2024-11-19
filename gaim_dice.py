@@ -1,7 +1,7 @@
  ###### specifier nombers of players ! #########
 while True:
     num_of_players = int(input("entrer le nombere des players (entre 2 er 4) : "))
-    if num_of_players!= 2 or num_of_players!= 4 or num_of_players!= 1:
+    if num_of_players== 2 or num_of_players== 4 or num_of_players== 1:
         break
 ########## inisialisation des scores of players ###########
 score_players={}
@@ -15,7 +15,7 @@ cond=True
 
 while cond:
     for key,v in score_players.items():
-        print("for :",key,"> ")
+        print("for :",key,"> ",end=" ")
         input(" press yes or enter to start! : ")
         random_nb=r.randint(1,6)
         print("vous avez ",random_nb, " points")
